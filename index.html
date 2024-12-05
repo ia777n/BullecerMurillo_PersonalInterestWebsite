@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sanrio Inspired Website</title>
+  <title>Sanrio World</title>
+  <!-- Link to Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <!-- Link to CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,34 +17,68 @@
     </div>
     <nav>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#characters">Characters</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#characters"><i class="fas fa-user-friends"></i> Characters</a></li>
+        <li><a href="#gallery"><i class="fas fa-images"></i> Gallery</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Main Section -->
   <main>
-    <section class="intro">
-      <h1>Welcome to Sanrio World</h1>
-      <p>Discover the magic of Sanrio characters, stories, and more!</p>
-      <button>Explore Now</button>
+    <!-- Home Section with Background Image -->
+    <section id="home" class="home-section">
+      <div class="home-content">
+        <h1 class="fade-in">Welcome to the World of Sanrio</h1>
+        <p class="slide-in">Discover the cutest characters and explore their magical universe!</p>
+        <button class="pulse">Learn More</button>
+      </div>
     </section>
-    <section class="features">
-      <div class="feature-card">
-        <img src="character-profile.png" alt="Character Profile">
-        <h2>Character Profiles</h2>
+
+    <!-- Character Section -->
+    <section id="characters" class="section">
+      <h2 class="zoom-in">Meet the Characters</h2>
+      <div class="character-grid">
+        <div class="character-card hover-scale">
+          <img src="hello-kitty.png" alt="Hello Kitty">
+          <h3>Hello Kitty</h3>
+          <p>The iconic Sanrio character known for her kindness and charm.</p>
+        </div>
+        <div class="character-card hover-scale">
+          <img src="my-melody.png" alt="My Melody">
+          <h3>My Melody</h3>
+          <p>A sweet bunny who loves helping her friends.</p>
+        </div>
+        <div class="character-card hover-scale">
+          <img src="kuromi.png" alt="Kuromi">
+          <h3>Kuromi</h3>
+          <p>A mischievous and sassy rival of My Melody.</p>
+        </div>
       </div>
-      <div class="feature-card">
-        <img src="blog.png" alt="Blog">
-        <h2>Blog</h2>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+      <h2 class="zoom-in">Gallery</h2>
+      <p>Explore delightful artwork and images of your favorite characters.</p>
+      <div class="gallery-images">
+        <img src="gallery1.png" alt="Gallery Image 1" class="hover-scale">
+        <img src="gallery2.png" alt="Gallery Image 2" class="hover-scale">
+        <img src="gallery3.png" alt="Gallery Image 3" class="hover-scale">
       </div>
-      <div class="feature-card">
-        <img src="events.png" alt="Events">
-        <h2>Upcoming Events</h2>
-      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h2 class="zoom-in">Contact Us</h2>
+      <p>Have questions or ideas to share? We'd love to hear from you!</p>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="pulse"><i class="fas fa-paper-plane"></i> Send Message</button>
+      </form>
     </section>
   </main>
 
@@ -49,9 +86,9 @@
   <footer>
     <p>&copy; 2024 Sanrio. All Rights Reserved.</p>
     <div class="socials">
-      <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-      <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
-      <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
     </div>
   </footer>
 </body>
