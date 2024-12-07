@@ -1,3 +1,17 @@
+// Smooth scroll for navigation links
+document.querySelectorAll('nav ul li a').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href').slice(1);
+      const target = document.getElementById(targetId);
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    });
+  });
+  
+
 // Select elements
 const characterGrid = document.querySelector('.character-grid');
 const characters = [
@@ -13,7 +27,7 @@ const characters = [
   },
   {
     name: 'Kuromi',
-    img: 'Assets/Kuromi.webp',
+    img: 'Assets/Kuromi.png',
     desc: 'A mischievous and sassy rival of My Melody.',
   },
   {

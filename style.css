@@ -1,12 +1,12 @@
-
-  /* Global Styles */
+  /* General font styling */
   body {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: 'Fredoka One', sans-serif; /* Playful, rounded font */
     background-color: #ffeaf2;
     color: #ff69b4;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fredoka One', sans-serif;
   }
 
   /* Header */
@@ -38,7 +38,6 @@
   nav ul li a {
     text-decoration: none;
     color: #ff69b4;
-    font-weight: bold;
     display: flex;
     align-items: center;
     gap: 5px;
@@ -47,7 +46,6 @@
 
   nav ul li a:hover {
     color: #fff;
-    background-color: #ff99c8;
   }
 
   /* Style for the video background */
