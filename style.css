@@ -254,13 +254,19 @@
     background-color: #f9f9f9;
   }
 
-  /* Video grid */
+/* Video grid */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns for episodes 1-3 */
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
   .video-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1.5rem;
+    grid-template-columns: 1fr; /* Single column for smaller screens */
   }
+}
 
   /* Video card */
   .video-card {
